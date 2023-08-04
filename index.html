@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Tu IMC</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Calcula tu IMC en simples pasos.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="row">
+        <div class="col-12 text-center">
+                <h1>Calculadora de Índice de Masa Corporal (IMC)</h1>
+                <button onclick="calcularIMC()">Calcular IMC</button>
+                <p id="resultado"></p>
+        </div>
+    </div>
+    
+   <!-- Contenedor 1 -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="./imagenes/personas-imc-bajo.png" class="card-img-top" alt="personas-imc-bajo">
+                    <div class="card-body">
+                        <h5 class="card-title">Personas IMC bajo</h5>
+                        <p class="card-text">Si su IMC es menor de 18.5, se encuentra dentro del rango de peso
+                            bajo/insuficiente.</p>
+                        <a href="#" class="btn btn-primary">Mas Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenedor 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="./imagenes/personas-imc-medio.png" class="card-img-top" alt="personas-imc-medio">
+                    <div class="card-body">
+                        <h5 class="card-title">Personas IMC medio</h5>
+                        <p class="card-text">Si su IMC es entre 18.5 y 30, se encuentra dentro del rango de peso
+                            medio/sobrepeso.</p>
+                        <a href="#" class="btn btn-primary">Mas Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenedor 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="./imagenes/personas-imc-alto.png" class="card-img-top" alt="personas-imc-alto">
+                    <div class="card-body">
+                        <h5 class="card-title">Personas IMC alto</h5>
+                        <p class="card-text">Si su IMC es 30.0 o superior, se encuentra dentro del rango de
+                            sobrepeso/obesidad.</p>
+                        <a href="#" class="btn btn-primary">Mas info</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenedor 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="./imagenes/tabla-imc.png" class="card-img-top" alt="tabla-imc">
+                    <div class="card-body">
+                        <h5 class="card-title">Tabla IMC</h5>
+                        <p class="card-text">Visualiza graficamente tu IMC.</p>
+                        <a href="#" class="btn btn-primary">Mas info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Pie de página -->
+
+    <footer class="bg-dark text-white text-center py-3" >
+        <p>IMC Online - Todos los derechos reservados &copy; 2023</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JS -->
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
