@@ -9,6 +9,7 @@ function calcularIMC() {
     alert("Ingresa valores válidos para peso y altura.");
     peso = parseFloat(prompt("Ingresa tu peso en kg:"));
     altura = parseFloat(prompt("Ingresa tu altura en metros:"));
+    break;
   }
 
   // Calculo IMC
@@ -28,7 +29,9 @@ function calcularIMC() {
     mensaje = "IMC: " + imc + " - Alto";
     // Alerta por sobrepeso
     alert("¡Tu IMC es mayor o igual a 30! Considera consultar a un medico.");
+        
   }
+  
 
   // Muestra resultado en la pagina
   document.getElementById("resultado").innerText = mensaje;
