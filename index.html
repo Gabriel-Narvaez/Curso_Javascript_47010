@@ -7,6 +7,7 @@
     <title>Calcula Tu IMC</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -23,10 +24,14 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="./index.html">Inicio</a>
-                    </li>
-
+                    </li>  
+                    
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="./shop.html">Shop</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -35,7 +40,7 @@
 
     <!-- Contenido principal -->
     <div class="row">
-        <div class="col-12 text-center">
+        <div class="col-12 text-center mt-4">
                 <h1>Calculadora de Índice de Masa Corporal (IMC)</h1>
                 <button onclick="calcularIMC()">Calcular IMC</button>
                 <p id="resultado"></p>
@@ -52,7 +57,7 @@
                         <h5 class="card-title">Personas IMC bajo</h5>
                         <p class="card-text">Si su IMC es menor de 18.5, se encuentra dentro del rango de peso
                             bajo/insuficiente.</p>
-                        <a href="#" class="btn btn-primary">Mas Info</a>
+                        <a href="https://www.topdoctors.es/diccionario-medico/bajo-peso" class="btn btn-primary">Mas Info</a>
                     </div>
                 </div>
             </div>
@@ -65,7 +70,7 @@
                         <h5 class="card-title">Personas IMC medio</h5>
                         <p class="card-text">Si su IMC es entre 18.5 y 30, se encuentra dentro del rango de peso
                             medio/sobrepeso.</p>
-                        <a href="#" class="btn btn-primary">Mas Info</a>
+                        <a href="https://www.topdoctors.com.ar/diccionario-medico/indice-de-masa-corporal-imc/" class="btn btn-primary">Mas Info</a>
                     </div>
                 </div>
             </div>
@@ -78,7 +83,7 @@
                         <h5 class="card-title">Personas IMC alto</h5>
                         <p class="card-text">Si su IMC es 30.0 o superior, se encuentra dentro del rango de
                             sobrepeso/obesidad.</p>
-                        <a href="#" class="btn btn-primary">Mas info</a>
+                        <a href="https://www.topdoctors.es/diccionario-medico/obesidad-tratamiento" class="btn btn-primary">Mas info</a>
                     </div>
                 </div>
             </div>
@@ -90,14 +95,40 @@
                     <div class="card-body">
                         <h5 class="card-title">Tabla IMC</h5>
                         <p class="card-text">Visualiza graficamente tu IMC.</p>
-                        <a href="#" class="btn btn-primary">Mas info</a>
+                        <a href="https://es.wikipedia.org/wiki/%C3%8Dndice_de_masa_corporal#/media/Archivo:Body_mass_index_chart-es.svg" class="btn btn-primary">Mas info</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
+    <div>
+         <!-- Contenedor 5 -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">Calcula tu Peso Ideal</h2>
+                            <button onclick="calcularPesoIdeal()" class="btn btn-primary">Calcular Peso Ideal</button>
+                            <p id="mensaje"></p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Contenedor 6 -->
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">Solicita un Turno</h2>                            
+                            <button onclick="agendarTurno()" class="btn btn-primary">Agendar Turno</button>
+                            <p id="mensaje2">Nuestros profesionales se comunicarán en este día y horario para
+                                asesorarlo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Pie de página -->
 
