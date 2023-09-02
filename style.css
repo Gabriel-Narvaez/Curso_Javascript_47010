@@ -12,3 +12,10 @@ body {
 footer {
     margin-top: auto;
 }
+
+input{
+    margin-bottom: 10px;
+}
+.card-custom {
+    padding: 10px; /* margen interno de 10px de las cards */
+}

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -24,12 +22,12 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="./index.html">Inicio</a>
-                    </li>  
-                    
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="./shop.html">Shop</a>
                     </li>
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
@@ -37,65 +35,71 @@
             </div>
         </div>
     </nav>
-
     <!-- Contenido principal -->
     <div class="row">
         <div class="col-12 text-center mt-4">
-                <h1>Calculadora de Índice de Masa Corporal (IMC)</h1>
-                <button onclick="calcularIMC()">Calcular IMC</button>
-                <p id="resultado"></p>
+            <h1>Calculadora de Índice de Masa Corporal (IMC)</h1>
+            <p>Ingresa tu peso en kg:</p>
+            <input type="text" id="peso" placeholder="Peso en kg">
+            <p>Ingresa tu altura en metros:</p>
+            <input type="text" id="altura" placeholder="Altura en metros">
+            <button id="calcularBtn" class="btn btn-primary">Calcular IMC</button>
+            <p id="resultado"></p>
         </div>
     </div>
-    
-   <!-- Contenedor 1 -->
+    <!-- Contenedor 1 -->
     <div class="container mt-4">
         <div class="row">
             <div class="col-md-3 mb-4">
-                <div class="card">
+                <div class="card card-custom">
                     <img src="./imagenes/personas-imc-bajo.png" class="card-img-top" alt="personas-imc-bajo">
                     <div class="card-body">
                         <h5 class="card-title">Personas IMC bajo</h5>
                         <p class="card-text">Si su IMC es menor de 18.5, se encuentra dentro del rango de peso
                             bajo/insuficiente.</p>
-                        <a href="https://www.topdoctors.es/diccionario-medico/bajo-peso" class="btn btn-primary">Mas Info</a>
+                        <a href="https://www.topdoctors.es/diccionario-medico/bajo-peso" class="btn btn-primary">Mas
+                            Info</a>
                     </div>
                 </div>
             </div>
 
             <!-- Contenedor 2 -->
             <div class="col-md-3 mb-4">
-                <div class="card">
+                <div class="card card-custom">
                     <img src="./imagenes/personas-imc-medio.png" class="card-img-top" alt="personas-imc-medio">
                     <div class="card-body">
                         <h5 class="card-title">Personas IMC medio</h5>
                         <p class="card-text">Si su IMC es entre 18.5 y 30, se encuentra dentro del rango de peso
                             medio/sobrepeso.</p>
-                        <a href="https://www.topdoctors.com.ar/diccionario-medico/indice-de-masa-corporal-imc/" class="btn btn-primary">Mas Info</a>
+                        <a href="https://www.topdoctors.com.ar/diccionario-medico/indice-de-masa-corporal-imc/"
+                            class="btn btn-primary">Mas Info</a>
                     </div>
                 </div>
             </div>
 
             <!-- Contenedor 3 -->
             <div class="col-md-3 mb-4">
-                <div class="card">
+                <div class="card card-custom">
                     <img src="./imagenes/personas-imc-alto.png" class="card-img-top" alt="personas-imc-alto">
                     <div class="card-body">
                         <h5 class="card-title">Personas IMC alto</h5>
                         <p class="card-text">Si su IMC es 30.0 o superior, se encuentra dentro del rango de
                             sobrepeso/obesidad.</p>
-                        <a href="https://www.topdoctors.es/diccionario-medico/obesidad-tratamiento" class="btn btn-primary">Mas info</a>
+                        <a href="https://www.topdoctors.es/diccionario-medico/obesidad-tratamiento"
+                            class="btn btn-primary">Mas info</a>
                     </div>
                 </div>
             </div>
 
             <!-- Contenedor 4 -->
             <div class="col-md-3 mb-4">
-                <div class="card">
+                <div class="card card-custom">
                     <img src="./imagenes/tabla-imc.png" class="card-img-top" alt="tabla-imc">
                     <div class="card-body">
                         <h5 class="card-title">Tabla IMC</h5>
                         <p class="card-text">Visualiza graficamente tu IMC.</p>
-                        <a href="https://es.wikipedia.org/wiki/%C3%8Dndice_de_masa_corporal#/media/Archivo:Body_mass_index_chart-es.svg" class="btn btn-primary">Mas info</a>
+                        <a href="https://es.wikipedia.org/wiki/%C3%8Dndice_de_masa_corporal#/media/Archivo:Body_mass_index_chart-es.svg"
+                            class="btn btn-primary">Mas info</a>
                     </div>
                 </div>
             </div>
@@ -103,46 +107,65 @@
     </div>
 
     <div>
-         <!-- Contenedor 5 -->
+        <!-- Contenedor 5 -->
         <div class="container mt-5">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="card mb-4">
                         <div class="card-body">
                             <h2 class="card-title">Calcula tu Peso Ideal</h2>
+                            <p>Ingresa tu altura en metros:</p>
+                            <input type="text" id="alturaPesoIdeal" placeholder="Altura en metros">
                             <button onclick="calcularPesoIdeal()" class="btn btn-primary">Calcular Peso Ideal</button>
-                            <p id="mensaje"></p>
+                            <p id="mensajePesoIdeal"></p>
                         </div>
                     </div>
                 </div>
-                 <!-- Contenedor 6 -->
+            </div>
+        </div>
+
+        <!-- Contenedor 6 -->
+        <div class="container mt-5">
+            <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h2 class="card-title">Solicita un Turno</h2>                            
+                            <h2 class="card-title">Solicita un Turno</h2>
+                            <p>Ingresa tu nombre:</p>
+                            <input type="text" id="nombreTurno" placeholder="Nombre">
+                            <p>Ingresa tu apellido:</p>
+                            <input type="text" id="apellidoTurno" placeholder="Apellido">
+                            <p>Ingresa tu teléfono:</p>
+                            <input type="text" id="telefonoTurno" placeholder="Teléfono">
+                            <p>Ingresa tu email:</p>
+                            <input type="text" id="emailTurno" placeholder="Email">
+                            <p>Ingresa la fecha (AAAA-MM-DD):</p>
+                            <input type="text" id="fechaTurno" placeholder="Fecha">
+                            <p>Ingresa la hora (HH:MM):</p>
+                            <input type="text" id="horaTurno" placeholder="Hora">
                             <button onclick="agendarTurno()" class="btn btn-primary">Agendar Turno</button>
-                            <p id="mensaje2">Nuestros profesionales se comunicarán en este día y horario para
-                                asesorarlo.</p>
+                            <p id="mensajeTurno">Nuestros profesionales se comunicarán en este día y horario
+                                para asesorarlo.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Pie de página -->
-
-    <footer class="bg-dark text-white text-center py-3" >
+    <footer class="bg-dark text-white text-center py-3">
         <p>IMC Online - Todos los derechos reservados &copy; 2023</p>
     </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- JS -->
-    <script src="./main.js"></script>
-
+    <script src="./js/caluladorImc.js"></script>
+    <script src="./js/calculaPesoIdeal.js"></script>
+    <script src="./js/agenda.js"></script>
 </body>
 
 </html>
