@@ -7,20 +7,20 @@ const resultadoElement = document.getElementById('resultado'); // Resultado
 
 // Agregar evento al botón de cálculo
 calcularBtn.addEventListener('click', function () {
-  // Obtener los valores y convertirlos a números decimales
+  // Obtener valores y convertirlos a números decimales
   let peso = parseFloat(pesoInput.value);
   let altura = parseFloat(alturaInput.value);
 
-  // Verificar si los valores son válidos
+  // Verifica si los valores son válidos
   if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
-    // Mensaje de error con SweetAlert
+    // Alerta de error con SweetAlert
     Swal.fire({
-      icon: 'error', // Icono de error
+      icon: 'error',
       title: 'Error',
-      text: 'Ingresa valores válidos para peso y altura.',
+      text: 'Ingresa valores válidos.',
     });
   } else {
-    // Calcular el IMC
+    // Calculo de IMC
     const imc = peso / (altura * altura);
     let mensaje = "IMC: " + imc.toFixed(2) + " - ";
 
@@ -35,14 +35,14 @@ calcularBtn.addEventListener('click', function () {
       mensaje += "Alto";
       resultadoElement.textContent = mensaje;
     }
-    // Mensaje de éxito con SweetAlert
+    // Alerta con SweetAlert
     Swal.fire({
-      icon: 'success', // Icono de éxito
-      title: 'Éxito',
+      icon: 'success',
+      title: 'Tu IMC es:',
       text: mensaje,
     });
 
-    // Mostrar el resultado en el elemento HTML
+    // Mostrar el resultado en HTML
     resultadoElement.textContent = mensaje;
   }
 });

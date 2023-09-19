@@ -7,18 +7,16 @@ let productos = [
   { titulo: 'Meditar IMC', precio: 2010.00, cantidadDisponible: 20 }
 ];
 
-// Función para mostrarlos en el select
+// Función para mostrar los productos en el select
 function mostrarProductosEnSelect() {
-  // Obtener <select> del HTML con el id "producto"
+  // Obtener select del HTML con el id "producto"
   let selectProducto = document.getElementById('producto');
-  // Recorrer los productos y crear una opción <option> para cada uno
+  // Recorrer los productos y crear una opción para cada uno
   productos.forEach(producto => {
     // Crear elemento <option>
     let option = document.createElement('option');
-    // Establecer valor opción con titulo del producto
-    option.value = producto.titulo;
-    // Establecer texto de la opción
-    option.textContent = producto.titulo;
+    // Establecer valor y texto de la opción con el título del producto
+    option.value = option.textContent = producto.titulo;
     // Agregar opción al elemento <select>
     selectProducto.appendChild(option);
   });
@@ -26,38 +24,48 @@ function mostrarProductosEnSelect() {
 
 // Función para comprar
 function realizarCompra() {
-  // <select> del HTML con el id "producto"
+  // Obtener elementos del formulario por ID
   let selectProducto = document.getElementById('producto');
-  // producto seleccionado
-  let selectedProduct = selectProducto.value;
-  // <input> del HTML con el id "cantidad" 
   let cantidadInput = document.getElementById('cantidad');
-  // Convertir cantidad a número entero
+
+  // Obtener valores seleccionados
+  let selectedProduct = selectProducto.value;
   let cantidadCompra = parseInt(cantidadInput.value);
+
   // Buscar producto en la lista de productos
   let productoSeleccionado = productos.find(producto => producto.titulo === selectedProduct);
-  // Verificar si existe
-  if (!productoSeleccionado) {
-    document.getElementById('mensajeResultado').textContent = 'Por favor, seleccione un producto válido.';
-    return;
+
+  // Validar la selección y la cantidad (operadores ternarios)
+  let mensajeResultado = !productoSeleccionado
+    ? 'Por favor, seleccione un producto válido.'
+    : isNaN(cantidadCompra) || cantidadCompra <= 0
+      ? 'Por favor, ingrese una cantidad válida.'
+      : cantidadCompra > productoSeleccionado.cantidadDisponible
+        ? 'No hay suficiente stock.'
+        : '';
+
+  // Si no hay errores, realizar la compra
+  if (!mensajeResultado) {
+    // Actualizar la cantidad 
+    productoSeleccionado.cantidadDisponible -= cantidadCompra;
+    // Calcular total a pagar
+    let totalAPagar = productoSeleccionado.precio * cantidadCompra;
+    mensajeResultado = `Compraste ${cantidadCompra} unidades de ${productoSeleccionado.titulo}. Total a pagar: $${totalAPagar.toFixed(2)}. Stock restante: ${productoSeleccionado.cantidadDisponible}`;
+
+    // Alerta de SweetAlert 
+    Swal.fire({
+      icon: 'success',
+      title: 'Compra Exitosa',
+      text: mensajeResultado,
+    });
+
+    // Reset del formulario 
+    document.getElementById('cantidad').value = '';
   }
-  // Verificar si la cantidad es válida
-  if (isNaN(cantidadCompra) || cantidadCompra <= 0) {
-    document.getElementById('mensajeResultado').textContent = 'Por favor, ingrese una cantidad válida.';
-    return;
-  }
-  // Verificar stock disponible
-  if (cantidadCompra > productoSeleccionado.cantidadDisponible) {
-    document.getElementById('mensajeResultado').textContent = 'No hay suficiente stock.';
-    return;
-  }
-  // Actualizar la cantidad 
-  productoSeleccionado.cantidadDisponible -= cantidadCompra;
-  // Calcular el total a pagar
-  let totalAPagar = productoSeleccionado.precio * cantidadCompra;
-  // Mostrar un mensaje 
-  document.getElementById('mensajeResultado').textContent = `Compraste ${cantidadCompra} unidades de ${productoSeleccionado.titulo}. Total a pagar: $${totalAPagar.toFixed(2)}. Stock restante: ${productoSeleccionado.cantidadDisponible}`;
+
+  // Mensaje de resultado
+  document.getElementById('mensajeResultado').textContent = mensajeResultado;
 }
 
-// Llamar función para mostrar los productos en el select
+// Función para mostrar los productos en el select
 mostrarProductosEnSelect();

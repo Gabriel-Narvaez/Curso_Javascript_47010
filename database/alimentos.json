@@ -1,0 +1,428 @@
+[
+    {
+      "nombre": "Manzana",
+      "calorias": 52,
+      "proteina": 0.26,
+      "carbohidratos": 14.34,
+      "grasa": 0.17,
+      "fibra": 2.4
+    },
+    {
+      "nombre": "Banana",
+      "calorias": 89,
+      "proteina": 1.09,
+      "carbohidratos": 22.84,
+      "grasa": 0.33,
+      "fibra": 2.6
+    },
+    {
+      "nombre": "Zanahoria",
+      "calorias": 41,
+      "proteina": 0.93,
+      "carbohidratos": 10.04,
+      "grasa": 0.24,
+      "fibra": 2.8
+    },
+    {
+      "nombre": "Pollo (pechuga)",
+      "calorias": 165,
+      "proteina": 31,
+      "carbohidratos": 0,
+      "grasa": 3.6,
+      "fibra": 0
+    },
+    {
+      "nombre": "Arroz (cocido)",
+      "calorias": 130,
+      "proteina": 2.7,
+      "carbohidratos": 28.7,
+      "grasa": 0.3,
+      "fibra": 0.4
+    },
+    {
+      "nombre": "Leche (descremada)",
+      "calorias": 35,
+      "proteina": 3.4,
+      "carbohidratos": 4.8,
+      "grasa": 0.2,
+      "fibra": 0
+    },
+    {
+      "nombre": "Huevo (cocido)",
+      "calorias": 68,
+      "proteina": 5.54,
+      "carbohidratos": 0.61,
+      "grasa": 4.8,
+      "fibra": 0
+    },
+    {
+      "nombre": "Pavo (pechuga)",
+      "calorias": 135,
+      "proteina": 30,
+      "carbohidratos": 0,
+      "grasa": 1,
+      "fibra": 0
+    },
+    {
+      "nombre": "Papa (cocida)",
+      "calorias": 87,
+      "proteina": 1.87,
+      "carbohidratos": 20.13,
+      "grasa": 0.1,
+      "fibra": 1.8
+    },
+    {
+      "nombre": "Salmón",
+      "calorias": 206,
+      "proteina": 22,
+      "carbohidratos": 0,
+      "grasa": 13.42,
+      "fibra": 0
+    },
+    {
+      "nombre": "Fresa",
+      "calorias": 32,
+      "proteina": 0.67,
+      "carbohidratos": 7.68,
+      "grasa": 0.3,
+      "fibra": 2
+    },
+    {
+      "nombre": "Pimiento (rojo)",
+      "calorias": 31,
+      "proteina": 0.99,
+      "carbohidratos": 7.55,
+      "grasa": 0.3,
+      "fibra": 2.1
+    },
+    {
+      "nombre": "Brócoli",
+      "calorias": 55,
+      "proteina": 3.7,
+      "carbohidratos": 11.2,
+      "grasa": 0.6,
+      "fibra": 3.7
+    },
+    {
+      "nombre": "Pasta (cocida)",
+      "calorias": 131,
+      "proteina": 5.23,
+      "carbohidratos": 25.77,
+      "grasa": 1.02,
+      "fibra": 1.3
+    },
+    {
+      "nombre": "Atún (enlatado)",
+      "calorias": 100,
+      "proteina": 22,
+      "carbohidratos": 0,
+      "grasa": 0.6,
+      "fibra": 0
+    },
+    {
+      "nombre": "Nuez",
+      "calorias": 654,
+      "proteina": 15,
+      "carbohidratos": 13.71,
+      "grasa": 64.37,
+      "fibra": 6.7
+    },
+    {
+      "nombre": "Yogur (natural)",
+      "calorias": 61,
+      "proteina": 5,
+      "carbohidratos": 4.7,
+      "grasa": 3.3,
+      "fibra": 0
+    },
+    {
+      "nombre": "Espinaca",
+      "calorias": 23,
+      "proteina": 2.9,
+      "carbohidratos": 3.6,
+      "grasa": 0.4,
+      "fibra": 2.2
+    },
+    {
+      "nombre": "Cereal (integral)",
+      "calorias": 123,
+      "proteina": 4.24,
+      "carbohidratos": 25.55,
+      "grasa": 1.53,
+      "fibra": 4
+    },
+    {
+      "nombre": "Pechuga de pavo (rebanada)",
+      "calorias": 29,
+      "proteina": 6.26,
+      "carbohidratos": 0.34,
+      "grasa": 0.42,
+      "fibra": 0
+    },
+    {
+      "nombre": "Mango",
+      "calorias": 60,
+      "proteina": 0.82,
+      "carbohidratos": 14.98,
+      "grasa": 0.38,
+      "fibra": 1.6
+    },
+    {
+      "nombre": "Almendra",
+      "calorias": 576,
+      "proteina": 21,
+      "carbohidratos": 21.69,
+      "grasa": 49.93,
+      "fibra": 12.2
+    },
+    {
+      "nombre": "Tomate",
+      "calorias": 18,
+      "proteina": 0.9,
+      "carbohidratos": 3.9,
+      "grasa": 0.2,
+      "fibra": 1.2
+    },
+    {
+      "nombre": "Pechuga de pollo (a la parrilla)",
+      "calorias": 165,
+      "proteina": 30,
+      "carbohidratos": 0,
+      "grasa": 3.6,
+      "fibra": 0
+    },
+    {
+      "nombre": "Pasta (integral)",
+      "calorias": 123,
+      "proteina": 4.24,
+      "carbohidratos": 25.55,
+      "grasa": 1.53,
+      "fibra": 4
+    },
+    {
+      "nombre": "Perca",
+      "calorias": 105,
+      "proteina": 20.92,
+      "carbohidratos": 0,
+      "grasa": 1.4,
+      "fibra": 0
+    },
+    {
+      "nombre": "Uva",
+      "calorias": 69,
+      "proteina": 0.65,
+      "carbohidratos": 18.04,
+      "grasa": 0.16,
+      "fibra": 0.9
+    },
+    {
+      "nombre": "Garbanzo",
+      "calorias": 164,
+      "proteina": 8.86,
+      "carbohidratos": 27.42,
+      "grasa": 2.59,
+      "fibra": 7.6
+    },
+    {
+      "nombre": "Pechuga de pato",
+      "calorias": 135,
+      "proteina": 16.43,
+      "carbohidratos": 0,
+      "grasa": 7.2,
+      "fibra": 0
+    },
+    {
+      "nombre": "Pepino",
+      "calorias": 16,
+      "proteina": 0.65,
+      "carbohidratos": 3.63,
+      "grasa": 0.11,
+      "fibra": 0.5
+    },
+    {
+      "nombre": "Tofu",
+      "calorias": 144,
+      "proteina": 15.33,
+      "carbohidratos": 3.87,
+      "grasa": 8.94,
+      "fibra": 0.7
+    },
+    {
+      "nombre": "Calabacín",
+      "calorias": 17,
+      "proteina": 1.21,
+      "carbohidratos": 3.11,
+      "grasa": 0.32,
+      "fibra": 1
+    },
+    {
+      "nombre": "Pasta (de trigo sarraceno)",
+      "calorias": 143,
+      "proteina": 2.99,
+      "carbohidratos": 30.85,
+      "grasa": 0.86,
+      "fibra": 1.8
+    },
+    {
+      "nombre": "Pollo (muslo)",
+      "calorias": 209,
+      "proteina": 18.5,
+      "carbohidratos": 0,
+      "grasa": 15.3,
+      "fibra": 0
+    },
+    {
+      "nombre": "Pera",
+      "calorias": 57,
+      "proteina": 0.36,
+      "carbohidratos": 15.23,
+      "grasa": 0.14,
+      "fibra": 3.1
+    },
+    {
+      "nombre": "Quinoa (cocida)",
+      "calorias": 120,
+      "proteina": 4.1,
+      "carbohidratos": 21.3,
+      "grasa": 1.9,
+      "fibra": 2.8
+    },
+    {
+      "nombre": "Espinaca (cocida)",
+      "calorias": 23,
+      "proteina": 2.97,
+      "carbohidratos": 4.12,
+      "grasa": 0.39,
+      "fibra": 2.4
+    },
+    {
+      "nombre": "Melocotón",
+      "calorias": 39,
+      "proteina": 0.91,
+      "carbohidratos": 9.54,
+      "grasa": 0.25,
+      "fibra": 1.5
+    },
+    {
+      "nombre": "Brócoli (cocido)",
+      "calorias": 55,
+      "proteina": 3.71,
+      "carbohidratos": 11.17,
+      "grasa": 0.62,
+      "fibra": 3.9
+    },
+    {
+      "nombre": "Hummus",
+      "calorias": 177,
+      "proteina": 7.92,
+      "carbohidratos": 20.07,
+      "grasa": 8.51,
+      "fibra": 4
+    },
+    {
+      "nombre": "Acelga",
+      "calorias": 19,
+      "proteina": 1.35,
+      "carbohidratos": 3.74,
+      "grasa": 0.18,
+      "fibra": 1.6
+    },
+    {
+      "nombre": "Sardina enlatada",
+      "calorias": 208,
+      "proteina": 25.5,
+      "carbohidratos": 0,
+      "grasa": 11.4,
+      "fibra": 0
+    },
+    {
+      "nombre": "Lentejas (cocidas)",
+      "calorias": 116,
+      "proteina": 9.02,
+      "carbohidratos": 20.13,
+      "grasa": 0.38,
+      "fibra": 7.9
+    },
+    {
+      "nombre": "Kiwi",
+      "calorias": 61,
+      "proteina": 1.14,
+      "carbohidratos": 14.66,
+      "grasa": 0.5,
+      "fibra": 3.2
+    },
+    {
+      "nombre": "Espinaca (cruda)",
+      "calorias": 23,
+      "proteina": 2.86,
+      "carbohidratos": 3.63,
+      "grasa": 0.39,
+      "fibra": 2.2
+    },
+    {
+      "nombre": "Frambuesa",
+      "calorias": 52,
+      "proteina": 1.48,
+      "carbohidratos": 11.94,
+      "grasa": 0.65,
+      "fibra": 6.5
+    },
+    {
+      "nombre": "Champiñones",
+      "calorias": 22,
+      "proteina": 3.09,
+      "carbohidratos": 3.1,
+      "grasa": 0.34,
+      "fibra": 1
+    },
+    {
+      "nombre": "Naranja",
+      "calorias": 43,
+      "proteina": 1,
+      "carbohidratos": 8.2,
+      "grasa": 0.2,
+      "fibra": 2.4
+    },
+    {
+      "nombre": "Garbanzo (cocido)",
+      "calorias": 164,
+      "proteina": 8.86,
+      "carbohidratos": 27.42,
+      "grasa": 2.59,
+      "fibra": 7.6
+    },
+    {
+      "nombre": "Pechuga de pato (a la parrilla)",
+      "calorias": 135,
+      "proteina": 16.43,
+      "carbohidratos": 0,
+      "grasa": 7.2,
+      "fibra": 0
+    },
+    {
+      "nombre": "Pepino (rodajas)",
+      "calorias": 15,
+      "proteina": 0.65,
+      "carbohidratos": 3.63,
+      "grasa": 0.11,
+      "fibra": 0.5
+    },
+    {
+      "nombre": "Tofu (cocido)",
+      "calorias": 144,
+      "proteina": 15.33,
+      "carbohidratos": 3.87,
+      "grasa": 8.94,
+      "fibra": 0.7
+    },
+    {
+      "nombre": "Calabacín (rodajas)",
+      "calorias": 16,
+      "proteina": 1.21,
+      "carbohidratos": 3.11,
+      "grasa": 0.32,
+      "fibra": 1
+    }
+  ]
+  
+  
